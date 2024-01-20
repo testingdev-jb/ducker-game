@@ -95,9 +95,11 @@ function moveDuck(event) {
 function updateDuckPosition() {
   gridMatrix[duckPosition.y][duckPosition.x] = contentBeforeDuck;
 
-  if(contentBeforeDuck ==='wood'){
-    if(duckPosition.y === 1 && duckPosition.x < 0 ) duckPosition.x++
-    else if (duckPosition.y === 2 && duckPosition.x > 0) duckPosition.x--
+  if(contentBeforeDuck === 'wood'){
+    if(duckPosition.y === 1 && duckPosition.x < 0 ) 
+    duckPosition.x++
+    else if (duckPosition.y === 2 && duckPosition.x > 0) 
+    duckPosition.x--
   }
 }
 
@@ -117,7 +119,7 @@ function checkPosition() {
 function endGame(reason) {
   // victory
   if (reason === 'duck-arrived') {
-    endGameText.innerHTM = 'YOU<br>WON!';
+    endGameText.innerHTML = 'YOU<br>WON!';
     endGameScreen.classList.add('win');
   }
 
