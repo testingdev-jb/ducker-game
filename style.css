@@ -94,7 +94,6 @@ h1 {
 .wood {
   background-image: url('./images/wood.png');
 }
-
 /* 
 This will work in a normal IDE / code editor but StackBlitz does not support GIF filetypes.
 See the 2 styles below for an alternative approach using animations.
